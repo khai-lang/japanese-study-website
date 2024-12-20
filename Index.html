@@ -9,8 +9,8 @@
 <body>
     <header>
         <h1>일본어 공부 웹사이트</h1>
-        <nav>
-            <ul>
+        <nav role="navigation">
+            <ul class="menu">
                 <li><a href="index.html">홈</a></li>
                 <li><a href="about.html">소개</a></li>
                 <li><a href="#read">읽기 연습</a></li>
@@ -22,22 +22,32 @@
     </header>
 
     <main>
-        <section id="read">
+        <!-- 읽기 연습 섹션 -->
+        <section id="read" class="section">
             <h2>읽기 연습</h2>
             <p>일본어 읽기 연습을 시작해보세요!</p>
+            <button class="btn-start" onclick="startReadingPractice()">연습 시작</button>
         </section>
 
-        <section id="write">
+        <!-- 쓰기 연습 섹션 -->
+        <section id="write" class="section">
             <h2>쓰기 연습</h2>
             <p>일본어 문장을 직접 작성해보세요.</p>
+            <textarea id="write-area" placeholder="일본어로 입력해보세요." rows="4"></textarea>
+            <button class="btn-check" onclick="checkWriting()">제출</button>
+            <p id="write-feedback" class="feedback"></p>
         </section>
 
-        <section id="speak">
+        <!-- 말하기 연습 섹션 -->
+        <section id="speak" class="section">
             <h2>말하기 연습</h2>
             <p>음성 인식을 통해 말하기 연습을 할 수 있습니다.</p>
+            <button class="btn-start" onclick="startSpeechRecognition()">음성 인식 시작</button>
+            <p id="spoken-text" class="feedback">여기에 인식된 단어가 표시됩니다.</p>
         </section>
 
-        <section id="listen">
+        <!-- 듣기 연습 섹션 -->
+        <section id="listen" class="section">
             <h2>듣기 연습</h2>
             <audio controls>
                 <source src="audio/sample.mp3" type="audio/mp3">
