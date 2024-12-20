@@ -8,13 +8,13 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
-    color: #FFB4FF;
+    color: #4374D9;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color:#FFB4FF;
+    background-color:#4374D9;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -49,7 +49,7 @@ nav ul.menu li a {
 }
 
 button {
-    background-color:#FFB4FF;
+    background-color:#4374D9;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -79,6 +79,6 @@ textarea {
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #FFB4FF;
+    background-color: #4374D9;
     color: white;
 }
