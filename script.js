@@ -29,3 +29,26 @@ recognition.onresult = (event) => {
 function startSpeechRecognition() {
     recognition.start();
 }
+
+const quizQuestions = [
+    { question: "こんにちは의 의미는?", answer: "안녕하세요" },
+    { question: "ありがとう의 의미는?", answer: "감사합니다" }
+];
+
+let currentQuestionIndex = 0;
+
+function loadQuestion() {
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    document.getElementById('question').innerText = currentQuestion.question;
+}
+
+function checkQuizAnswer() {
+    const userAnswer = document.getElementById('quiz-answer').value;
+    const correctAnswer = quizQuestions[currentQuestionIndex].answer;
+
+    if (userAnswer === correctAnswer) {
+        document.getElementById('quiz-feedback').innerText = '정답입니다!';
+    } else {
+        document.getElementById('quiz-feedback').innerText = '오답입니다. 다시 시도해보세요!';
+    }
+}
