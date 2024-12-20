@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일본어 학습 웹사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>일본어 공부 웹사이트</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="about.html">소개</a></li>
+                <li><a href="#read">읽기 연습</a></li>
+                <li><a href="#write">쓰기 연습</a></li>
+                <li><a href="#speak">말하기 연습</a></li>
+                <li><a href="#listen">듣기 연습</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="read">
+            <h2>읽기 연습</h2>
+            <p>일본어 읽기 연습을 시작해보세요!</p>
+        </section>
+
+        <section id="write">
+            <h2>쓰기 연습</h2>
+            <p>일본어 문장을 직접 작성해보세요.</p>
+        </section>
+
+        <section id="speak">
+            <h2>말하기 연습</h2>
+            <p>음성 인식을 통해 말하기 연습을 할 수 있습니다.</p>
+        </section>
+
+        <section id="listen">
+            <h2>듣기 연습</h2>
+            <audio controls>
+                <source src="audio/sample.mp3" type="audio/mp3">
+                브라우저가 오디오 태그를 지원하지 않습니다.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 일본어 학습 웹사이트</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
